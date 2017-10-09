@@ -1,11 +1,41 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Button1Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#e3f4b9</item>
+        <item name="colorButtonNormal">#94c120</item>
+    </style>
+
+    <style name="Button2Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#a1d3f7</item>
+        <item name="colorButtonNormal">#0f70b7</item>
+    </style>
+
+    <style name="Button3Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ffce85</item>
+        <item name="colorButtonNormal">#f29200</item>
+    </style>
+
+    <style name="Button4Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#f6b8b6</item>
+        <item name="colorButtonNormal">#e62f29</item>
+    </style>
+
+    <style name="Button5Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#c2c2eb</item>
+        <item name="colorButtonNormal">#2c2e83</item>
+    </style>
+
+    <style name="Button6Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ebebeb</item>
+        <item name="colorButtonNormal">#b2b2b2</item>
     </style>
 
 </resources>
