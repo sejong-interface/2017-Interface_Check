@@ -10,6 +10,12 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.SearchView.OnQueryTextListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,13 +39,12 @@ public class interfacemem extends AppCompatActivity {
     private static final String TAG_ID = "id";
     private static final String TAG_NAME = "name";
     private static final String TAG_ADDRESS ="address";
+    private static final String TAG_DEPARTMENT ="department";
 
     private TextView mTextViewResult;
     ArrayList<HashMap<String, String>> mArrayList;
     ListView mlistView;
     String mJsonString;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,20 +163,22 @@ public class interfacemem extends AppCompatActivity {
                 String id = item.getString(TAG_ID);
                 String name = item.getString(TAG_NAME);
                 String address = item.getString(TAG_ADDRESS);
+                String department = item.getString(TAG_DEPARTMENT);
 
                 HashMap<String,String> hashMap = new HashMap<>();
 
                 hashMap.put(TAG_ID, id);
                 hashMap.put(TAG_NAME, name);
                 hashMap.put(TAG_ADDRESS, address);
+                hashMap.put(TAG_DEPARTMENT, department);
 
                 mArrayList.add(hashMap);
             }
 
             ListAdapter adapter = new SimpleAdapter(
                     interfacemem.this, mArrayList, R.layout.item_list,
-                    new String[]{TAG_ID,TAG_NAME, TAG_ADDRESS},
-                    new int[]{R.id.textView_list_id, R.id.textView_list_name, R.id.textView_list_address}
+                    new String[]{TAG_ID,TAG_NAME, TAG_ADDRESS, TAG_DEPARTMENT},
+                    new int[]{R.id.textView_list_id, R.id.textView_list_name,R.id.textView_list_address,R.id.textView_list_department}
             );
 
             mlistView.setAdapter(adapter);

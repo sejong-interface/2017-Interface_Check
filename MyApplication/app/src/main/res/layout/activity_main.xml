@@ -38,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="Absence"
-            android:text="건의사항"
+            android:text="인터페이스 갤러리"
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:theme="@style/Button2Style" />
@@ -94,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="관리자용\n환경설정(집부)"
+            android:text="환경설정"
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:onClick="control"
