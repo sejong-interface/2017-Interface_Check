@@ -12,7 +12,7 @@
         android:id="@+id/textView_list_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="6"
         android:padding="5dp" />
 
 
