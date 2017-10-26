@@ -14,17 +14,14 @@ if (!$link)
 mysqli_set_charset($link,"utf-8"); 
 
 $test=isset($_POST['id']) ? $_POST['id'] : '';  
-$name=isset($_POST['name']) ? $_POST['name'] : '';  
-$phone=isset($_POST['phone']) ? $_POST['phone'] : '';  
-$department=isset($_POST['department']) ? $_POST['department'] : ''; 
 
-if ($test !="" and $name !="" and $phone !=""){   
+if ($test !=""){   
   
-    $sql="UPDATE Person SET name = '$name', phone = '$phone', department = '$department' WHERE id = '$test' LIMIT 10"; 
+    $sql="DELETE  FROM Person WHERE id = '$test' LIMIT 10"; 
     $result=mysqli_query($link,$sql);   
 
     if($result){  
-       echo "SQL문 처리 성공";  
+       echo "성공적으로 삭제되었습니다.";  
     }  
     else{  
        echo "SQL문 처리중 에러 발생 : "; 
@@ -48,20 +45,13 @@ if (!$android){
 
 <html>
    <body>
-   
       <form action="<?php $_PHP_SELF ?>" method="POST">
-         변경을 원하는 학번을 입력하시오<br>
-	 학번 : <input type = "text" name = "id" /> <br> <br>
-         변경하고싶은 값을 입력하고 제출을 누르시오<br>
-	 이름 : <input type = "text" name = "name" />
-         전화번호 : <input type = "text" name = "phone" />
-	 학과 : <input type = "text" name = "department" />
+         삭제를 원하는 학번을 입력하시오<br>
+	 학번 : <input type = "text" name = "id" />
          <input type = "submit" />
-      </form>
-   
+      </form>  
    </body>
 </html>
 <?php
 }
 ?>
-

@@ -7,35 +7,30 @@
     android:layout_margin="15dp"
     android:padding="10dp">
 
-
     <TextView
         android:id="@+id/textView_list_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="6"
-        android:padding="5dp" />
+        android:layout_weight="7" />
 
 
     <TextView
         android:id="@+id/textView_list_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:padding="5dp" />
+        android:layout_weight="4" />
 
 
     <TextView
         android:id="@+id/textView_list_address"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="7"
-        android:padding="5dp" />
+        android:layout_weight="7" />
 
     <TextView
         android:id="@+id/textView_list_department"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="7"
-        android:padding="5dp" />
+        android:layout_weight="7" />
 
 </LinearLayout>

@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity{
     private static TextSwitcher textswitcher;
 
     // String array to be shown on textSwitcher
-    String textToShow[] = { "동방 청소 열심히!", "이번주 집회는 6시 입니다",
+    String textToShow[] = {"동방 청소 열심히!", "이번주 집회는 6시 입니다",
             "코딩 공부 열심히!", "시험기간에는 집회가 없습니다."};
 
     // Total length of the string array
@@ -102,7 +102,8 @@ public class MainActivity extends ActionBarActivity{
 
 
     public void Checkmem(View v){
-        Toast.makeText(getApplicationContext(), "출석되었습니다.", Toast.LENGTH_LONG).show();
+        Intent Act = new Intent(getApplicationContext(), Inform.class);
+        startActivity(Act);
     }
 
     public void Absence(View v){

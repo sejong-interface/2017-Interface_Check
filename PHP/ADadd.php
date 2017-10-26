@@ -14,15 +14,13 @@ if (!$link)
 mysqli_set_charset($link,"utf-8");  
 
 //POST 값을 읽어온다.
-$id=isset($_POST['id']) ? $_POST['id'] : '';  
-$name=isset($_POST['name']) ? $_POST['name'] : '';  
-$phone=isset($_POST['phone']) ? $_POST['phone'] : '';  
-$department=isset($_POST['department']) ? $_POST['department'] : ''; 
- 
+$contents=isset($_POST['contents']) ? $_POST['contents'] : '';  
 
-if ($id !="" and $name !="" and $phone !=""){   
-  
-    $sql="insert into Person(id, name, phone, department) values('$id','$name','$phone','$department')";  
+
+if ($contents !=""){   
+
+    $today = date("Y년 n월 j일 (요일 : D)");
+    $sql="insert into AD(contents, today) values('$contents', '$today')";  
     $result=mysqli_query($link,$sql);  
 
     if($result){  
@@ -52,10 +50,7 @@ if (!$android){
    <body>
    
       <form action="<?php $_PHP_SELF ?>" method="POST">
-         학번 : <input type = "text" name = "id" />
-	 이름 : <input type = "text" name = "name" />
-         전화번호 : <input type = "text" name = "phone" />
-	 학과 : <input type = "text" name = "department" />
+         공지사항 : <input type = "text" name = "contents" />
          <input type = "submit" />
       </form>
    

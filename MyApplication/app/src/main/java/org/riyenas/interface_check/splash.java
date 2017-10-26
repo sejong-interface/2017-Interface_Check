@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class splash extends Activity{
+public class Splash extends Activity{
     /** 로딩 화면이 떠있는 시간(밀리초단위)  **/
     private final int SPLASH_DISPLAY_LENGTH = 2000;
 
@@ -20,9 +20,9 @@ public class splash extends Activity{
             @Override
             public void run() {
                 /* 메뉴액티비티를 실행하고 로딩화면을 죽인다.*/
-                Intent mainIntent = new Intent(splash.this,LoginActivity.class);
-                splash.this.startActivity(mainIntent);
-                splash.this.finish();
+                Intent mainIntent = new Intent(Splash.this,LoginActivity.class);
+                Splash.this.startActivity(mainIntent);
+                Splash.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
