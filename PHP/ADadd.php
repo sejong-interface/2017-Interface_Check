@@ -19,7 +19,7 @@ $contents=isset($_POST['contents']) ? $_POST['contents'] : '';
 
 if ($contents !=""){   
 
-    $today = date("Y년 n월 j일 (요일 : D)");
+    $today = date("n월 j일 h시 i분");
     $sql="insert into AD(contents, today) values('$contents', '$today')";  
     $result=mysqli_query($link,$sql);  
 

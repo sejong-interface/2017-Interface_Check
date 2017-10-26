@@ -30,6 +30,7 @@ public class Inform extends AppCompatActivity{
 
     private static final String TAG_JSON="webnautes";
     private static final String TAG_ID = "contents";
+    private static final String TAG_TIME = "today";
 
     private TextView mTextViewResult;
     ArrayList<HashMap<String, String>> mArrayList;
@@ -39,14 +40,14 @@ public class Inform extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ad);
+        setContentView(R.layout.activity_inform);
 
         mTextViewResult = (TextView)findViewById(R.id.textView_result);
         mlistView = (ListView) findViewById(R.id.listView_list);
         mArrayList = new ArrayList<>();
 
         Inform.GetData task = new Inform.GetData();
-        task.execute("http://interface518.dothome.co.kr/inter/Inform.php");
+        task.execute("http://interface518.dothome.co.kr/inter/AD.php");
     }
 
 
@@ -151,18 +152,20 @@ public class Inform extends AppCompatActivity{
                 JSONObject item = jsonArray.getJSONObject(i);
 
                 String id = item.getString(TAG_ID);
+                String today = item.getString(TAG_TIME);
 
                 HashMap<String,String> hashMap = new HashMap<>();
 
                 hashMap.put(TAG_ID, id);
+                hashMap.put(TAG_TIME, today);
 
                 mArrayList.add(hashMap);
             }
 
             ListAdapter adapter = new SimpleAdapter(
                     Inform.this, mArrayList, R.layout.item_list1,
-                    new String[]{TAG_ID},
-                    new int[]{R.id.textView_list_contents}
+                    new String[]{TAG_TIME,TAG_ID},
+                    new int[]{R.id.textView_time_contents,R.id.textView_list_contents}
             );
 
             mlistView.setAdapter(adapter);

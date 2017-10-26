@@ -20,7 +20,7 @@ if($result){
     
     while($row=mysqli_fetch_array($result)){
         array_push($data,
-            array('contents'=>$row[0]));
+            array('contents'=>$row[0],'today'=>$row[1]));
     }
 
     header('Content-Type: application/json; charset=utf8');
