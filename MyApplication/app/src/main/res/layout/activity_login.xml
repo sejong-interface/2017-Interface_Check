@@ -13,7 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="194dp"
-        app:srcCompat="@drawable/sejong"
+        app:srcCompat="@drawable/ic_sejong"
         android:layout_weight="0.2" />
 
     <android.support.design.widget.TextInputLayout
@@ -42,7 +42,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/key"
+            android:drawableRight="@drawable/ic_key"
             android:hint="Password"
             android:inputType="textPassword" />
 
