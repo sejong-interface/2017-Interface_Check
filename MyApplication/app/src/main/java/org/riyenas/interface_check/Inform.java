@@ -46,7 +46,7 @@ public class Inform extends AppCompatActivity{
         mlistView = (ListView) findViewById(R.id.listView_list);
         mArrayList = new ArrayList<>();
 
-        Inform.GetData task = new Inform.GetData();
+        GetData task = new GetData();
         task.execute("http://interface518.dothome.co.kr/inter/AD.php");
     }
 

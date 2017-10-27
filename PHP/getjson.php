@@ -11,7 +11,7 @@ if (!$link)
 
 mysqli_set_charset($link,"utf8"); 
 
-$sql="select * FROM `Person` ORDER BY `contents`";
+$sql="select * FROM `Person` ORDER BY `id` ASC";
 
 $result=mysqli_query($link,$sql);
 $data = array();   
