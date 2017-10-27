@@ -20,7 +20,7 @@ public class Splash extends Activity{
             @Override
             public void run() {
                 /* 메뉴액티비티를 실행하고 로딩화면을 죽인다.*/
-                Intent mainIntent = new Intent(Splash.this,LoginActivity.class);
+                Intent mainIntent = new Intent(Splash.this,MainActivity.class);
                 Splash.this.startActivity(mainIntent);
                 Splash.this.finish();
             }

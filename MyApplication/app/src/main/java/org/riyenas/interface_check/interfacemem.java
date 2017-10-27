@@ -10,13 +10,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import android.app.Activity;
-import android.view.Menu;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.SearchView.OnQueryTextListener;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

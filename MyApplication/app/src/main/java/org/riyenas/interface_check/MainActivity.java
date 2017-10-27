@@ -32,9 +32,6 @@ public class MainActivity extends ActionBarActivity{
         Toast.makeText(getApplicationContext(), "건의사항이 제출되었습니다.", Toast.LENGTH_LONG).show();
     }
 
-    public void Checkmem(View v){
-        Toast.makeText(getApplicationContext(), "출석되었습니다", Toast.LENGTH_LONG).show();
-    }
 
     public void Interfacemem(View v) {
         Intent Act = new Intent(getApplicationContext(), interfacemem.class);
@@ -46,9 +43,15 @@ public class MainActivity extends ActionBarActivity{
         startActivity(Act);
     }
 
+    public void checkmem(View v) {
+        Intent Act = new Intent(getApplicationContext(), SuccessActivity.class);
+        startActivity(Act);
+    }
+
     public void GoogleDrive(View v){
         Toast.makeText(getApplicationContext(), "아이디 : interface518@gmail.com \n비밀번호 : interface518", Toast.LENGTH_LONG).show();
         Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/intl/ko_ALL/drive/"));
         startActivity(myIntent);
     }
+
 }
