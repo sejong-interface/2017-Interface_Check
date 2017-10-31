@@ -1,19 +1,11 @@
 package org.riyenas.interface_check;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Gravity;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.TextSwitcher;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ViewSwitcher.ViewFactory;
 
 public class MainActivity extends ActionBarActivity{
 
@@ -24,7 +16,7 @@ public class MainActivity extends ActionBarActivity{
     }
 
     public void Inform(View v){
-        Intent Act = new Intent(getApplicationContext(), Inform.class);
+        Intent Act = new Intent(getApplicationContext(), InformActivity.class);
         startActivity(Act);
     }
 
@@ -39,7 +31,7 @@ public class MainActivity extends ActionBarActivity{
     }
 
     public void control(View v) {
-        Intent Act = new Intent(getApplicationContext(), LoginActivity.class);
+        Intent Act = new Intent(getApplicationContext(), SettingActivity.class);
         startActivity(Act);
     }
 

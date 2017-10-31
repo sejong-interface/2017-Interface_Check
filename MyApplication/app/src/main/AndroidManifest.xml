@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Splash">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +37,11 @@
 
         </activity>
 
-        <activity android:name=".Inform">
+        <activity android:name=".InformActivity">
+
+        </activity>
+
+        <activity android:name=".SettingActivity">
 
         </activity>
 

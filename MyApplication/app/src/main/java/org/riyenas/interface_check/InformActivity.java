@@ -24,7 +24,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Inform extends AppCompatActivity{
+public class InformActivity extends AppCompatActivity{
 
     private static String TAG = "phptest_MainActivity";
 
@@ -59,7 +59,7 @@ public class Inform extends AppCompatActivity{
         protected void onPreExecute() {
             super.onPreExecute();
 
-            progressDialog = ProgressDialog.show(Inform.this,
+            progressDialog = ProgressDialog.show(InformActivity.this,
                     "Please Wait", null, true, true);
         }
 
@@ -163,7 +163,7 @@ public class Inform extends AppCompatActivity{
             }
 
             ListAdapter adapter = new SimpleAdapter(
-                    Inform.this, mArrayList, R.layout.item_list1,
+                    InformActivity.this, mArrayList, R.layout.item_list1,
                     new String[]{TAG_TIME,TAG_ID},
                     new int[]{R.id.textView_time_contents,R.id.textView_list_contents}
             );
