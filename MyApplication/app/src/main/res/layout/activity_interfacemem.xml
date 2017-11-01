@@ -5,23 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:layout_margin="15dp"
-    android:padding="10dp">
+    tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/searchView1"
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:queryHint="Search.."></SearchView>
+        android:animationCache="false"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:title="재학생 명부"
+        app:titleTextColor="@color/white"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:id="@+id/listView_main_list" />
+        android:id="@+id/listView_main_list"
+        android:layout_marginTop="15dp"/>
 
     <TextView
         android:layout_width="match_parent"

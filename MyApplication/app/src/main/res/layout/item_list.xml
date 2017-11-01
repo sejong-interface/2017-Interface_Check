@@ -7,30 +7,72 @@
     android:layout_margin="15dp"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/textView_list_id"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="6">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher_round" />
 
-    <TextView
-        android:id="@+id/textView_list_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="4" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"></LinearLayout>
 
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView_list_address"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/textView_list_department"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="4" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textView_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_list_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView_list_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
 </LinearLayout>
