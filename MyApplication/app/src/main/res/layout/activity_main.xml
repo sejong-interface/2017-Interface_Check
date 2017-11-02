@@ -12,10 +12,11 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_checkmark"
             android:layout_weight="1"
             android:onClick="checkmem"
             android:text="출석체크"
@@ -23,10 +24,11 @@
             android:textStyle="bold"
             android:theme="@style/Button1Style" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_network"
             android:layout_weight="1"
             android:onClick="Absence"
             android:text="인터페이스 갤러리"
@@ -41,10 +43,11 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonNext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_clipboard"
             android:layout_weight="1"
             android:onClick="Inform"
             android:textColor="#ffffff"
@@ -52,10 +55,11 @@
             android:theme="@style/Button3Style"
             android:text="공지사항" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_group"
             android:layout_weight="1"
             android:onClick="Interfacemem"
             android:text="재학생 명부"
@@ -70,10 +74,11 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_cloud"
             android:layout_weight="1"
             android:onClick="GoogleDrive"
             android:text="인터페이스\n코딩도장"
@@ -81,10 +86,11 @@
             android:textStyle="bold"
             android:theme="@style/Button5Style" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/ic_group"
             android:layout_weight="1"
             android:text="환경설정"
             android:textColor="#ffffff"

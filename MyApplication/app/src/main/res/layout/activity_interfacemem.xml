@@ -24,8 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:id="@+id/listView_main_list"
-        android:layout_marginTop="15dp"/>
+        android:id="@+id/listView_main_list" />
 
     <TextView
         android:layout_width="match_parent"
