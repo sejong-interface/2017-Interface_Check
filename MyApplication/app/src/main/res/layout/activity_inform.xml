@@ -19,7 +19,7 @@
         app:popupTheme="@style/AppTheme"
         app:theme="@style/ToolbarColoredBackArrow"
         app:title="공지사항"
-        app:titleTextColor="@color/white"/>
+        app:titleTextColor="@color/white" />
 
     <ListView
         android:id="@+id/listView_list"

@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_network"
+            android:scaleType="centerCrop"
             android:layout_weight="1"
             android:onClick="Absence"
             android:text="인터페이스 갤러리"
@@ -50,6 +51,8 @@
             android:src="@drawable/ic_clipboard"
             android:layout_weight="1"
             android:onClick="Inform"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:theme="@style/Button3Style"
@@ -84,19 +87,19 @@
             android:text="인터페이스\n코딩도장"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:theme="@style/Button5Style" />
+            android:theme="@style/Button6Style" />
 
         <ImageButton
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_group"
             android:layout_weight="1"
-            android:text="환경설정"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
             android:onClick="control"
-            android:theme="@style/Button6Style" />
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gears"
+            android:text="환경설정"
+            android:theme="@style/Button5Style" />
 
     </LinearLayout>
 </LinearLayout>

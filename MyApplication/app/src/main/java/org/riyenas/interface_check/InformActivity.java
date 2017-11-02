@@ -1,11 +1,13 @@
 package org.riyenas.interface_check;
 
+import android.content.ClipData;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -43,7 +45,8 @@ public class InformActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inform);
 
-        mTextViewResult = (TextView)findViewById(R.id.textView_result);
+
+        mTextViewResult = (TextView) findViewById(R.id.textView_result);
         mlistView = (ListView) findViewById(R.id.listView_list);
         mArrayList = new ArrayList<>();
 

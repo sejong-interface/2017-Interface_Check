@@ -1,0 +1,13 @@
+diff a/MyApplication/app/src/main/AndroidManifest.xml b/MyApplication/app/src/main/AndroidManifest.xml	(rejected hunks)
+@@ -14,7 +14,11 @@
+         android:theme="@style/AppTheme">
+ 
+         <activity android:name=".SplashActivity">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
+ 
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
+         </activity>
+ 
+         <activity android:name=".LoginActivity">
