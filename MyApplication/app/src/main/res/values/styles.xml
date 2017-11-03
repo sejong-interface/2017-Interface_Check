@@ -2,12 +2,12 @@
 
     <style name="Button1Style" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">#e3f4b9</item>
-        <item name="colorButtonNormal">#94c120</item>
+        <item name="colorButtonNormal">#cdd399</item>
     </style>
 
     <style name="Button2Style" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">#a1d3f7</item>
-        <item name="colorButtonNormal">#0f70b7</item>
+        <item name="colorButtonNormal">#ffc0cb</item>
     </style>
 
     <style name="Button3Style" parent="Theme.AppCompat.Light">
@@ -17,7 +17,7 @@
 
     <style name="Button4Style" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">#f6b8b6</item>
-        <item name="colorButtonNormal">#e62f29</item>
+        <item name="colorButtonNormal">#d3bc99</item>
     </style>
 
     <style name="Button5Style" parent="Theme.AppCompat.Light">
@@ -27,7 +27,7 @@
 
     <style name="Button6Style" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">#ebebeb</item>
-        <item name="colorButtonNormal">#b2b2b2</item>
+        <item name="colorButtonNormal">#b0e0e6</item>
     </style>
 
     <style name="ChatAppTheme" parent="@android:style/Theme.Holo.Light">

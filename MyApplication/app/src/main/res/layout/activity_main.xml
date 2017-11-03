@@ -19,9 +19,8 @@
             android:src="@drawable/ic_checkmark"
             android:layout_weight="1"
             android:onClick="checkmem"
-            android:text="출석체크"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
             android:theme="@style/Button1Style" />
 
         <ImageButton
@@ -32,9 +31,6 @@
             android:scaleType="centerCrop"
             android:layout_weight="1"
             android:onClick="Absence"
-            android:text="인터페이스 갤러리"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
             android:theme="@style/Button2Style" />
     </LinearLayout>
 
@@ -53,10 +49,7 @@
             android:onClick="Inform"
             android:padding="0sp"
             android:scaleType="centerCrop"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:theme="@style/Button3Style"
-            android:text="공지사항" />
+            android:theme="@style/Button3Style" />
 
         <ImageButton
             android:id="@+id/button2"
@@ -65,9 +58,8 @@
             android:src="@drawable/ic_group"
             android:layout_weight="1"
             android:onClick="Interfacemem"
-            android:text="재학생 명부"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
             android:theme="@style/Button4Style" />
     </LinearLayout>
 
@@ -84,9 +76,8 @@
             android:src="@drawable/ic_cloud"
             android:layout_weight="1"
             android:onClick="GoogleDrive"
-            android:text="인터페이스\n코딩도장"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
             android:theme="@style/Button6Style" />
 
         <ImageButton

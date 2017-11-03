@@ -94,7 +94,7 @@ namespace WindowsFormsApplication1
             
             text = Encoding.UTF8.GetString(textBox2.Text);
             winhttp.Open("POST", "http://interface518.dothome.co.kr/inter/ADadd.php",false);
-            winhttp.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
+            winhttp.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf8");
             winhttp.Send("contents=" + textBox2.Text);
             winhttp.WaitForResponse();
             //textBox1.ToString();
