@@ -49,3 +49,4 @@ C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsAp
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache

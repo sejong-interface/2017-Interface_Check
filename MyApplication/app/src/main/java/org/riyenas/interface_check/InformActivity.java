@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
+
 import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -26,6 +27,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
+
 
 public class InformActivity extends AppCompatActivity{
 
@@ -52,7 +57,21 @@ public class InformActivity extends AppCompatActivity{
 
         GetData task = new GetData();
         task.execute("http://interface518.dothome.co.kr/inter/AD.php");
+
+        TabHost tabhost = (TabHost)findViewById(R.id.mytabhost);//Tabhost
+        tabhost.setup();
+
+        TabSpec spec = tabhost.newTabSpec("Tab1");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("공지사항");
+        tabhost.addTab(spec);
+
+        TabSpec spec2 = tabhost.newTabSpec("Tab2");
+        spec2.setContent(R.id.tab2);
+        spec2.setIndicator("게시판");
+        tabhost.addTab(spec2);
     }
+
 
 
     private class GetData extends AsyncTask<String, Void, String>{

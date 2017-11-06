@@ -55,6 +55,6 @@
         android:onClick="checkLogin"
         android:text="Login"
         android:textColor="@android:color/white"
-        android:theme="@style/Button5Style" />
+        android:background="#FFDA004E" />
 
 </LinearLayout>

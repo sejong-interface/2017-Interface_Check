@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -22,7 +21,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void Absence(View v){
-        Toast.makeText(getApplicationContext(), "건의사항이 제출되었습니다.", Toast.LENGTH_LONG).show();
+        Intent Act = new Intent(getApplicationContext(), WriteActivity.class);
+        startActivity(Act);
     }
 
 

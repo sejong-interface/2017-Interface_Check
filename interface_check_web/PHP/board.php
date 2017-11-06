@@ -1,38 +1,38 @@
-<?php  
+ï»¿<?php  
 error_reporting(E_ALL); 
 ini_set('display_errors',1); 
 
 $link=mysqli_connect("localhost","interface518","518interface","interface518"); 
 if (!$link)  
 { 
-   echo "MySQL Á¢¼Ó ¿¡·¯ : ";
+   echo "MySQL ì ‘ì† ì—ëŸ¬ : ";
    echo mysqli_connect_error();
    exit();
 }  
 
 
-mysqli_set_charset($link,"utf-8");  
+mysqli_set_charset($link,"utf8");  
 
-//POST °ªÀ» ÀÐ¾î¿Â´Ù.
+//POST ê°’ì„ ì½ì–´ì˜¨ë‹¤.
+$name=isset($_POST['name']) ? $_POST['name'] : '';  
 $contents=isset($_POST['contents']) ? $_POST['contents'] : '';  
+ 
 
-
-if ($contents !=""){   
-
-    $today = date("n¿ù jÀÏ h½Ã iºÐ");
-    $sql="insert into AD(contents, today) values('$contents', '$today')";  
+if ($contents !="" and $name !=""){   
+  
+    $sql="insert into board(name, contents) values('$name','$contents')";  
     $result=mysqli_query($link,$sql);  
 
     if($result){  
-       echo "SQL¹® Ã³¸® ¼º°ø";  
+       echo "SQLë¬¸ ì²˜ë¦¬ ì„±ê³µ";  
     }  
     else{  
-       echo "SQL¹® Ã³¸®Áß ¿¡·¯ ¹ß»ý : "; 
+       echo "SQLë¬¸ ì²˜ë¦¬ì¤‘ ì—ëŸ¬ ë°œìƒ : "; 
        echo mysqli_error($link);
     } 
  
 } else {
-    echo "µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÏ¼¼¿ä ";
+    echo "ë°ì´í„°ë¥¼ ìž…ë ¥í•˜ì„¸ìš” ";
 }
 
 
@@ -50,7 +50,8 @@ if (!$android){
    <body>
    
       <form action="<?php $_PHP_SELF ?>" method="POST">
-         °øÁö»çÇ× : <input type = "text" name = "contents" />
+         ê¸€ì“´ì´ : <input type = "text" name = "name" />
+	 ë‚´ìš© : <input type = "text" name = "contents" />
          <input type = "submit" />
       </form>
    
