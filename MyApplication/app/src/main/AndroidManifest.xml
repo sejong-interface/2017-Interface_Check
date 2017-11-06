@@ -50,6 +50,13 @@
 
         </activity>
 
+        <activity
+            android:name=".PopupActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+
+        </activity>
     </application>
 
 </manifest>

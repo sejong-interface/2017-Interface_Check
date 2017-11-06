@@ -37,8 +37,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void checkmem(View v) {
-        Intent Act = new Intent(getApplicationContext(), SuccessActivity.class);
-        startActivity(Act);
+        Intent intent = new Intent(this, PopupActivity.class);
+        startActivity(intent);
     }
 
     public void GoogleDrive(View v){

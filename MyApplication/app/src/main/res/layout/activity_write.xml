@@ -6,37 +6,61 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:id="@+id/textView_main_name" />
-
-    <EditText
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText_main_name" />
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="4dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address"
-        android:id="@+id/textView_main_address" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText_main_address" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="0.5"
+                android:id="@+id/textView_main_name" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Insert"
-        android:id="@+id/button_main_insert" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/editText_main_name" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:id="@+id/textView_main_result" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Address"
+                android:id="@+id/textView_main_address" />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:id="@+id/editText_main_address" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Insert"
+                android:layout_weight="1"
+                android:id="@+id/button_main_insert" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:id="@+id/textView_main_result" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 </LinearLayout>
