@@ -16,8 +16,12 @@ public class PopupActivity extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
-        layoutParams.dimAmount = 0.7f;
+        layoutParams.dimAmount = 0.6f;
         getWindow().setAttributes(layoutParams);
         setContentView(R.layout.activity_popup);
+    }
+
+    public void btn_main(View v) {
+        this.finish();
     }
 }

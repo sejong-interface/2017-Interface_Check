@@ -16,18 +16,18 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void Inform(View v){
-        Intent Act = new Intent(getApplicationContext(), InformActivity.class);
+        Intent Act = new Intent(getApplicationContext(), NoticeActivity.class);
         startActivity(Act);
     }
 
     public void Absence(View v){
-        Intent Act = new Intent(getApplicationContext(), WriteActivity.class);
+        Intent Act = new Intent(getApplicationContext(), BoardWriteActivity.class);
         startActivity(Act);
     }
 
 
     public void Interfacemem(View v) {
-        Intent Act = new Intent(getApplicationContext(), interfacemem.class);
+        Intent Act = new Intent(getApplicationContext(), InterfacelistActivity.class);
         startActivity(Act);
     }
 

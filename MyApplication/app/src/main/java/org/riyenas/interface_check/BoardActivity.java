@@ -1,6 +1,5 @@
 package org.riyenas.interface_check;
 
-import android.content.ClipData;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -8,7 +7,6 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -28,50 +26,35 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import android.widget.TabHost;
-import android.widget.TabHost.TabSpec;
 
 
-public class InformActivity extends AppCompatActivity{
-
-    private static String TAG = "phptest_MainActivity";
+public class BoardActivity extends AppCompatActivity {
+    
+    private static String TAG = "phptest";
 
     private static final String TAG_JSON="webnautes";
-    private static final String TAG_ID = "contents";
-    private static final String TAG_TIME = "today";
+    private static final String TAG_NAME = "name";
+    private static final String TAG_CONTENTS = "contents";
+    private static final String TAG_TODAY ="today";
 
     private TextView mTextViewResult;
     ArrayList<HashMap<String, String>> mArrayList;
     ListView mlistView;
     String mJsonString;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inform);
+        setContentView(R.layout.activity_board);
 
-
-        mTextViewResult = (TextView) findViewById(R.id.textView_result);
-        mlistView = (ListView) findViewById(R.id.listView_list);
+        mTextViewResult = (TextView)findViewById(R.id.textView_result1);
+        mlistView = (ListView) findViewById(R.id.listView_list1);
         mArrayList = new ArrayList<>();
 
         GetData task = new GetData();
-        task.execute("http://interface518.dothome.co.kr/inter/AD.php");
-
-        TabHost tabhost = (TabHost)findViewById(R.id.mytabhost);//Tabhost
-        tabhost.setup();
-
-        TabSpec spec = tabhost.newTabSpec("Tab1");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("공지사항");
-        tabhost.addTab(spec);
-
-        TabSpec spec2 = tabhost.newTabSpec("Tab2");
-        spec2.setContent(R.id.tab2);
-        spec2.setIndicator("게시판");
-        tabhost.addTab(spec2);
+        task.execute("http://interface518.dothome.co.kr/inter/getboard.php");
     }
-
 
 
     private class GetData extends AsyncTask<String, Void, String>{
@@ -82,7 +65,7 @@ public class InformActivity extends AppCompatActivity{
         protected void onPreExecute() {
             super.onPreExecute();
 
-            progressDialog = ProgressDialog.show(InformActivity.this,
+            progressDialog = ProgressDialog.show(BoardActivity.this,
                     "Please Wait", null, true, true);
         }
 
@@ -174,21 +157,23 @@ public class InformActivity extends AppCompatActivity{
 
                 JSONObject item = jsonArray.getJSONObject(i);
 
-                String id = item.getString(TAG_ID);
-                String today = item.getString(TAG_TIME);
+                String name = item.getString(TAG_NAME);
+                String contents = item.getString(TAG_CONTENTS);
+                String today = item.getString(TAG_TODAY);
 
                 HashMap<String,String> hashMap = new HashMap<>();
 
-                hashMap.put(TAG_ID, id);
-                hashMap.put(TAG_TIME, today);
+                hashMap.put(TAG_NAME, name);
+                hashMap.put(TAG_CONTENTS, contents);
+                hashMap.put(TAG_TODAY, today);
 
                 mArrayList.add(hashMap);
             }
 
             ListAdapter adapter = new SimpleAdapter(
-                    InformActivity.this, mArrayList, R.layout.item_list1,
-                    new String[]{TAG_TIME,TAG_ID},
-                    new int[]{R.id.textView_time_contents,R.id.textView_list_contents}
+                    BoardActivity.this, mArrayList, R.layout.item_list2,
+                    new String[]{TAG_NAME,TAG_CONTENTS, TAG_TODAY},
+                    new int[]{R.id.textView_name_contents1, R.id.textView_contents_contents1, R.id.textView_today_contents1}
             );
 
             mlistView.setAdapter(adapter);

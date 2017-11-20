@@ -2,7 +2,6 @@ package org.riyenas.interface_check;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginRelatedActivity extends AppCompatActivity{
     // CONNECTION_TIMEOUT and READ_TIMEOUT are in milliseconds
 
     public static final int CONNECTION_TIMEOUT=10000;
@@ -54,7 +53,7 @@ public class LoginActivity extends AppCompatActivity{
 
     private class AsyncLogin extends AsyncTask<String, String, String>
     {
-        ProgressDialog pdLoading = new ProgressDialog(LoginActivity.this);
+        ProgressDialog pdLoading = new ProgressDialog(LoginRelatedActivity.this);
         HttpURLConnection conn;
         URL url = null;
 
@@ -161,18 +160,18 @@ public class LoginActivity extends AppCompatActivity{
                 use sharedPreferences of Android. and logout button to clear sharedPreferences.
                  */
 
-                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent = new Intent(LoginRelatedActivity.this,MainActivity.class);
                 startActivity(intent);
-                LoginActivity.this.finish();
+                LoginRelatedActivity.this.finish();
 
             }else if (result.equalsIgnoreCase("false")){
 
                 // If username and password does not match display a error message
-                Toast.makeText(LoginActivity.this, "Invalid email or password", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginRelatedActivity.this, "Invalid email or password", Toast.LENGTH_LONG).show();
 
             } else if (result.equalsIgnoreCase("exception") || result.equalsIgnoreCase("unsuccessful")) {
 
-                Toast.makeText(LoginActivity.this, "OOPs! Something went wrong. Connection Problem.", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginRelatedActivity.this, "OOPs! Something went wrong. Connection Problem.", Toast.LENGTH_LONG).show();
 
             }
         }

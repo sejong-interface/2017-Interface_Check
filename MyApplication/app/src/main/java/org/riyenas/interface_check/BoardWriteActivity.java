@@ -22,15 +22,13 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
-public class WriteActivity extends AppCompatActivity{
+public class BoardWriteActivity extends AppCompatActivity{
 
     private static String TAG = "phptest_WriteActivity";
 
     private EditText mEditTextName;
     private EditText mEditTextContents;
     private TextView mTextViewResult;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +40,8 @@ public class WriteActivity extends AppCompatActivity{
         mTextViewResult = (TextView)findViewById(R.id.textView_main_result);
 
         Button buttonInsert = (Button)findViewById(R.id.button_main_insert);
+
+
         buttonInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,10 @@ public class WriteActivity extends AppCompatActivity{
 
             }
         });
+
+
     }
+
 
 
     class InsertData extends AsyncTask<String, Void, String>{
@@ -68,7 +71,7 @@ public class WriteActivity extends AppCompatActivity{
         protected void onPreExecute() {
             super.onPreExecute();
 
-            progressDialog = ProgressDialog.show(WriteActivity.this,
+            progressDialog = ProgressDialog.show(BoardWriteActivity.this,
                     "Please Wait", null, true, true);
         }
 

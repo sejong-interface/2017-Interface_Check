@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginRelatedActivity">
 
         </activity>
 
@@ -34,11 +34,11 @@
 
         </activity>
 
-        <activity android:name=".interfacemem">
+        <activity android:name=".InterfacelistActivity">
 
         </activity>
 
-        <activity android:name=".InformActivity">
+        <activity android:name=".NoticeActivity">
 
         </activity>
 
@@ -46,7 +46,7 @@
 
         </activity>
 
-        <activity android:name=".WriteActivity">
+        <activity android:name=".BoardWriteActivity">
 
         </activity>
 
@@ -55,6 +55,9 @@
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <activity android:name=".BoardActivity">
 
         </activity>
     </application>

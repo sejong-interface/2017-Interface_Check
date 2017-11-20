@@ -37,14 +37,7 @@ C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsAp
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\mscorlib.dll
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\ko\mscorlib.resources.dll
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\normidna.nlp
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\normnfc.nlp
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\normnfd.nlp
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\normnfkc.nlp
-C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\bin\Debug\normnfkd.nlp
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\riyenas0925\Documents\interface_check\interface_check_pc\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources

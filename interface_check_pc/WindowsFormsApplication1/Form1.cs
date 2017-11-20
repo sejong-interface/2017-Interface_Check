@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using WinHttp;
 using MySql.Data.MySqlClient;
+using System.Web;
 
 namespace WindowsFormsApplication1
 {
@@ -90,12 +91,20 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            string text = "";
+            string text = textBox2.Text;
+            byte[] bSendMsg = Encoding.UTF8.GetBytes(textBox2.Text);
+
+            string strEncode = HttpUtility.UrlEncode(textBox2.Text);
+            MessageBox.Show(strEncode);
+
+
             
-            text = Encoding.UTF8.GetString(textBox2.Text);
+            string readString = Encoding.UTF8.GetString(bSendMsg);
+            textBox2.Text = readString;
+            //text = Encoding.UTF8.GetString(textBox2.Text);
             winhttp.Open("POST", "http://interface518.dothome.co.kr/inter/ADadd.php",false);
             winhttp.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf8");
-            winhttp.Send("contents=" + textBox2.Text);
+            winhttp.Send("contents=" + strEncode);
             winhttp.WaitForResponse();
             //textBox1.ToString();
 
@@ -123,7 +132,7 @@ namespace WindowsFormsApplication1
         {
             listBox1.Items.Clear();
             string text = "";
-            textBox4.Text = Encoding.Default.GetString(textBox2.Text);
+           // textBox4.Text = Encoding.Default.GetString(textBox2.Text);
             winhttp.Open("POST", "http://interface518.dothome.co.kr/inter/query.php?", false);
             winhttp.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
 

@@ -20,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:theme="@style/Login">
 
         <EditText
             android:id="@+id/email"
@@ -36,7 +37,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/Login">
 
         <EditText
             android:id="@+id/password"

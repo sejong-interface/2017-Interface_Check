@@ -1,33 +1,33 @@
 <resources>
 
     <style name="Button1Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#e3f4b9</item>
-        <item name="colorButtonNormal">#cdd399</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="Button2Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#a1d3f7</item>
-        <item name="colorButtonNormal">#ffc0cb</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="Button3Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#ffce85</item>
-        <item name="colorButtonNormal">#f29200</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="Button4Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#f6b8b6</item>
-        <item name="colorButtonNormal">#d3bc99</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="Button5Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#c2c2eb</item>
-        <item name="colorButtonNormal">#2c2e83</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="Button6Style" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#ebebeb</item>
-        <item name="colorButtonNormal">#b0e0e6</item>
+        <item name="colorControlHighlight">#274da1</item>
+        <item name="colorButtonNormal">@null</item>
     </style>
 
     <style name="ChatAppTheme" parent="@android:style/Theme.Holo.Light">
@@ -48,9 +48,15 @@
         <item name="colorControlNormal">#FFDA004E</item>
     </style>
 
+    <style name="Login" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#FFDA004E</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#FFDA004E</item>
         <item name="colorPrimaryDark">#FFAE0048</item>
     </style>
-
 </resources>

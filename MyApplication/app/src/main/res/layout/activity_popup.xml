@@ -7,38 +7,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="194dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:background="#111111"
-        android:orientation="vertical" >
+        android:background="@drawable/popup"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:text="타이틀" />
+            android:text="출석체크"
+            android:textColor="#000000"/>
 
         <TextView
             android:id="@+id/tv_content"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:text="내용" />
+            android:text="출석하시겠습니까?"
+            android:textColor="#000000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_ok"
+                android:onClick="btn_main"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="ok" />
+                android:text="네"
+                android:background="@null"
+                android:textColor="#000000"/>
 
             <Button
                 android:id="@+id/btn_cancel"
@@ -46,7 +51,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="cancel" />
+                android:text="아니오"
+                android:background="@null"
+                android:textColor="#000000"/>
         </LinearLayout>
     </LinearLayout>
 

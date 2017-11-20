@@ -24,7 +24,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class interfacemem extends AppCompatActivity {
+public class InterfacelistActivity extends AppCompatActivity {
 
     private static String TAG = "phptest_MainActivity";
 
@@ -61,7 +61,7 @@ public class interfacemem extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
 
-            progressDialog = ProgressDialog.show(interfacemem.this,
+            progressDialog = ProgressDialog.show(InterfacelistActivity.this,
                     "Please Wait", null, true, true);
         }
 
@@ -169,7 +169,7 @@ public class interfacemem extends AppCompatActivity {
             }
 
             ListAdapter adapter = new SimpleAdapter(
-                    interfacemem.this, mArrayList, R.layout.item_list,
+                    InterfacelistActivity.this, mArrayList, R.layout.item_list,
                     new String[]{TAG_ID,TAG_NAME, TAG_ADDRESS, TAG_DEPARTMENT},
                     new int[]{R.id.textView_list_id, R.id.textView_list_name,R.id.textView_list_address,R.id.textView_list_department}
             );
