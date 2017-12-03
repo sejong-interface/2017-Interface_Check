@@ -1,5 +1,6 @@
 package org.riyenas.interface_check;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -25,7 +26,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.melnykov.fab.FloatingActionButton;
 
+import android.view.View;
 
 
 public class BoardActivity extends AppCompatActivity {
@@ -37,6 +40,8 @@ public class BoardActivity extends AppCompatActivity {
     private static final String TAG_CONTENTS = "contents";
     private static final String TAG_TODAY ="today";
 
+
+    private FloatingActionButton fab;
     private TextView mTextViewResult;
     ArrayList<HashMap<String, String>> mArrayList;
     ListView mlistView;
@@ -54,6 +59,18 @@ public class BoardActivity extends AppCompatActivity {
 
         GetData task = new GetData();
         task.execute("http://interface518.dothome.co.kr/inter/getboard.php");
+
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        // 이벤트 적용
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Act = new Intent(getApplicationContext(), BoardWriteActivity.class);
+                startActivity(Act);
+            }
+        });
     }
 
 

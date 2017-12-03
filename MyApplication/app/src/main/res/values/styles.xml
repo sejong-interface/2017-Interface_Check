@@ -58,5 +58,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#FFDA004E</item>
         <item name="colorPrimaryDark">#FFAE0048</item>
+        <item name="colorControlActivated">#FFDA004E</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
     </style>
 </resources>

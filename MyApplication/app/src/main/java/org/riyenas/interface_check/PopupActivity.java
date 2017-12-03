@@ -24,4 +24,6 @@ public class PopupActivity extends Activity{
     public void btn_main(View v) {
         this.finish();
     }
+
+
 }

@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void Absence(View v){
-        Intent Act = new Intent(getApplicationContext(), BoardWriteActivity.class);
+        Intent Act = new Intent(getApplicationContext(), BoardActivity.class);
         startActivity(Act);
     }
 

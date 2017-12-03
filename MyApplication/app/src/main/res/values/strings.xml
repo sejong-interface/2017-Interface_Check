@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Interface_check</string>
+    <string name="app_name">Interface check</string>
     <string name="title">(Android WebSockets Chat App)</string>
     <string name="author_name">By Ravi Tamada</string>
     <string name="author_url">www.androidhive.info</string>
